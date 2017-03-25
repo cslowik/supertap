@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main MenuVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainMenuVC" customModule="SuperTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="tNU-mu-FVu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cs-button" translatesAutoresizingMaskIntoConstraints="NO" id="MDm-3e-0aG">
+                                <rect key="frame" x="-46" y="0.0" width="466" height="506"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="466" id="OHS-kE-i97"/>
+                                    <constraint firstAttribute="height" constant="506" id="UUm-bS-yj3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="supertapLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Hg4-LY-3ab">
+                                <rect key="frame" x="41" y="160" width="268" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="flc-Om-ZFN"/>
+                                    <constraint firstAttribute="width" secondItem="Hg4-LY-3ab" secondAttribute="height" multiplier="134:93" id="yJq-tn-kNT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7c6-U5-4uf">
+                                <rect key="frame" x="94" y="522" width="187" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="4Dd-Uc-oCV"/>
+                                    <constraint firstAttribute="width" constant="187" id="LMb-tK-Hhj"/>
+                                </constraints>
+                                <state key="normal" image="startButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqy-pi-88k">
+                                <rect key="frame" x="20" y="619" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="k4b-fT-3HR"/>
+                                    <constraint firstAttribute="height" constant="32" id="rdY-fm-BVX"/>
+                                </constraints>
+                                <state key="normal" title="Instructions">
+                                    <color key="titleColor" red="0.0" green="0.62745098039215685" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngr-JG-913">
+                                <rect key="frame" x="235" y="619" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="WT1-Ww-zzo"/>
+                                    <constraint firstAttribute="width" constant="120" id="uSA-dg-GA1"/>
+                                </constraints>
+                                <state key="normal" title="Leaderboard">
+                                    <color key="titleColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7c6-U5-4uf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Pd-jA-CCw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hg4-LY-3ab" secondAttribute="trailing" constant="50" id="2hN-Il-ZLB"/>
+                            <constraint firstItem="tNU-mu-FVu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Y3-4G-NYX"/>
+                            <constraint firstItem="MDm-3e-0aG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80.5" id="Ant-6r-8FY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ngr-JG-913" secondAttribute="bottom" constant="16" id="FIu-jS-FO2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tNU-mu-FVu" secondAttribute="bottom" id="KMr-0y-WVN"/>
+                            <constraint firstItem="MDm-3e-0aG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPj-cy-Iw2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7c6-U5-4uf" secondAttribute="bottom" constant="80" id="Ud4-Np-W7J"/>
+                            <constraint firstItem="Hg4-LY-3ab" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="Uqs-QR-gtT"/>
+                            <constraint firstItem="Hg4-LY-3ab" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80.5" id="Yv6-h8-pf2"/>
+                            <constraint firstItem="ngr-JG-913" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-4" id="a2O-06-cq6"/>
+                            <constraint firstItem="Iqy-pi-88k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="l5c-gA-OUu"/>
+                            <constraint firstItem="tNU-mu-FVu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lzh-0D-4v3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Iqy-pi-88k" secondAttribute="bottom" constant="16" id="sbs-Vu-Ptr"/>
+                            <constraint firstAttribute="trailing" secondItem="tNU-mu-FVu" secondAttribute="trailing" id="ubf-KL-muY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="cs-button" width="308" height="309"/>
+        <image name="startButton" width="187" height="65"/>
+        <image name="supertapLogo" width="308" height="220"/>
+    </resources>
+</document>
